@@ -9,7 +9,7 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Personal website</title>
+        <title>Portfolio website complete</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -166,11 +166,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" placeholder="Write your mesage here " id="" cols="0" rows="8" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form action ="assets/php/mail.php" method="post" class="contact__form">
+                        <input type="text" placeholder="Name" name="name"class="contact__input">
+                        <input type="mail" placeholder="Email" name="email"class="contact__input">
+                        <textarea name="" placeholder="Write your mesage here "name="message" id="" cols="0" rows="8" class="contact__input"></textarea>
+                       <button type="submit"  class="contact__button button">submit</button>
                     </form>
                 </div>
             </section>
@@ -185,6 +185,10 @@
                 <a href="" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
             <p>&#169; 2021 copyright all right reserved</p>
+
+            <!-- page visitor code  -->
+
+
             <a href='https://www.free-counters.org/'>Free-Counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=528adc55dca8c952b2819f873ceb43896bc4f6b4'></script>
             <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/880198/t/1"></script>
         </footer>
