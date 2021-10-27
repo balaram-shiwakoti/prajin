@@ -166,10 +166,13 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action ="mail.php" method="post" class="contact__form">
-                        <input type="text" placeholder="Name" name="name"class="contact__input">
-                        <input type="mail" placeholder="Email" name="email"class="contact__input">
-                        <textarea name="" placeholder="Write your mesage here "name="message" id="" cols="0" rows="8" class="contact__input"></textarea>
+                    <form action="https://formsubmit.co/abiitahmi@email.com" method="POST" class="contact__form" >
+                    <!-- <form action ="javascript:sendmail()" method="post" > -->
+                        <input type="text" placeholder="Name" name="name" class="contact__input">
+                        <input type="hidden" name="_subject" value="New email">
+                        <input type="hidden" name="_next" value="https://balaramshiwakoti.com.np/greeting.html">
+                        <input type="mail" placeholder="Email" name="mail" class="contact__input" required>
+                        <textarea name="" placeholder="Write your mesage here "name="message"  cols="0" rows="8" class="contact__input"></textarea>
                        <button type="submit"  class="contact__button button">submit</button>
                     </form>
                 </div>
@@ -199,5 +202,10 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+
+
+
+    
     </body>
 </html>
