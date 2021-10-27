@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body{
-    background-color: #000000;
+    background-color: blue
 }
 
 
 h1,h2{
-   color: #33FFBD;
-
+   color: white;
+   font-family: 'varela', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px
-    
+    font-size: 80px;
+  
 }
 span{
     display: flex;
